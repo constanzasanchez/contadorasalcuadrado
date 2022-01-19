@@ -1,7 +1,7 @@
 import React from 'react';
 import {Navbar, Nav, Container} from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../img/c2logo.png';
+import CartWidget from './cartWidget';
 
 //Navbar con Bootstrap
 function NavBar() {
@@ -22,6 +22,9 @@ function NavBar() {
                 <Nav.Link href="#blog">¿Sabías que?</Nav.Link>
                 <Nav.Link href="#capacitaciones">Capacitaciones</Nav.Link>
                 <Nav.Link href="#contacto">¡Hablemos!</Nav.Link>
+                <Nav.Link href="#cart">
+                    <CartWidget/>
+                </Nav.Link>
             </Nav>
         </Container>
     </Navbar>
